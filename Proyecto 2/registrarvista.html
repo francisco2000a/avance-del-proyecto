@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="style.css">
+</head>  
+<body>
+ <form class="formulario">
+    
+    <h1>Registrate Gimnasio Universitario </h1>
+     <div class="contenedor">
+     
+     <div class="input-contenedor">
+         <i class="fas fa-user icon"></i>
+         <input type="text" id="nombres" onfocusout="validar()" placeholder="Nombre Completo">
+         
+         </div>
+         
+         <div class="input-contenedor">
+         <i class="fas fa-envelope icon"></i>
+         <input type="text"  id="correo" onfocusout="validarCorreo()" placeholder="Correo Electronico">
+         
+         </div>
+         
+         <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+         <input type="password" placeholder="Contraseña">
+         </div>
+         <p>Sexo:
+            <input type="radio" name="hm" value="h" required> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+          </p>
+          
+          <p>Edad:
+            <input type="radio" name="edad" value="menor"> Menor
+            <input type="radio" name="edad" value="adulto" required> Adulto
+          </p>
+         <input type="submit" value="Registrate" class="button">
+         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+         <p>¿Ya tienes una cuenta?<a class="link" >Iniciar Sesion</a></p>
+
+    
+     </div>
+    </form>
+</body>
+<script type="text/javascript" >
+    function validar(){
+        var valorNombre = document.getElementById("nombres").value;
+
+        if(valorNombre == ""){
+            alert("No se permite espacios en blanco en este campo.");
+        }
+    }
+
+
+    function validarCorreo(){
+        let valorCorreo = document.getElementById("correo").value;
+
+        if(!valorCorreo.includes("@hotmail.com")){
+            alert("Necesita ingresar una direccion de correo valido, solo se aceptan correso de tipo dominio@hotmail.com");
+        }
+
+    }
+
+</script>
+
+</html>
