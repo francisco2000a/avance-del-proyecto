@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+form{
+    position: absolute;
+    top: 15%;
+    left: 33.7%;
+    outline: rgb(255, 251, 251) 8px solid;
+    text-align: center;
+    width: 380px;
+    height: 530px; 
+    padding: 50px;  
+    background: white;
+    
+}
+form .entradas{
+    width: 250px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 20px;
+    outline: none;
+}
+.title{
+    background: rgb(213, 235, 209);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    top: -10px;
+    left: -10px;
+    font-size: 25px;
+}
+
+.redes-sociales a{
+    display: inline-block;
+    margin: 22px;
+    text-decoration: none;
+    
+}
+.redes-sociales .google{
+    background: rgb(236, 8, 8);
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding: 9px;
+    color: white;
+}
+.redes-sociales .facebook{
+    background: darkblue;
+    width: 100px;
+    height: 25px;
+    padding: 9px;
+    text-align: center;
+    color: white;
+}
+.login{
+    background: rgb(172, 187, 170);
+    width: 97.5%;
+    height: 15px;
+    margin-left: -10px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    padding: 15px;
+}
+.registro{
+    width: 250px;
+    height: 25px;
+    cursor: pointer;
+    color: white;
+    background: rgb(122, 138, 122);
+    border: none;
+}
+body{
+  
+    background-image:url(img/gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center ;
+}
